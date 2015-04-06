@@ -1,0 +1,21 @@
+{
+  "name": "react-video-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -t reactify src/main.jsx -o dist/main.js",
+    "watch": "watchify --verbose -t reactify -o dist/main.js src/main.jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.13.1"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "reactify": "^1.1.0",
+    "watchify": "^2.6.0"
+  }
+}
